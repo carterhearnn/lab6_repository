@@ -1,6 +1,6 @@
 def encode(values): # encode function adds 3 to every value given to the program
     encoded_values = ''
-    for pos, num in enumerate(values):
+    for position, num in enumerate(values):
         num = int(num) + 3
         num = str(num)
         encoded_values += num
