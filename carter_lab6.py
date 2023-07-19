@@ -1,6 +1,6 @@
 def encode(values): # encode function adds 3 to every value given to the program
     encoded_values = ''
-    for position, num in enumerate(values):
+    for pos, num in enumerate(values):
         num = int(num) + 3
         num = str(num)
         encoded_values += num
@@ -17,8 +17,7 @@ def main():
         print('2. Decode')
         print('3. Quit')
         print('')
-        user_choice = input('Please enter an option: ')
-
+        user_choice = int(input('Please enter an option: '))
         if user_choice == 1:
             values = input('Please enter your password to encode: ')
             encoded_values = encode(values)
